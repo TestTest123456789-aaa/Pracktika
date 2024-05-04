@@ -13,9 +13,9 @@ namespace Практика_27.Models
         public int CountZal { get; set; }
         public int Count { get; set; }
 
-        public Kinoteatr(int id, string Name, int CountZal, int Count)
+        public Kinoteatr(int Id, string Name, int CountZal, int Count)
         {
-            this.id = id;
+            this.id = Id;
             this.Name = Name;
             this.CountZal = CountZal;
             this.Count = Count;

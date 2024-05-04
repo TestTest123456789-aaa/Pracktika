@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Практика_27.Classes;
 
 namespace Практика_27
 {
@@ -23,6 +24,8 @@ namespace Практика_27
         public MainWindow()
         {
             InitializeComponent();
+
+            new KinoteatrContext(0, "test", 12, 12).Add();
         }
     }
 }
