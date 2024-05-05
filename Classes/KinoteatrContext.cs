@@ -34,14 +34,14 @@ namespace Практика_27.Classes
         public void Add()
         {
             string SQL = "INSERT INTO " +
-                "`kinoteatr`(" +
-                "`name`, " +
-                "`count_zal`, " +
-                "`count`) " +
-                "VALUES " +
-                $"('{this.Name}', " +
-                $"'{this.CountZal}', " +
-                $"'{this.Count}')";
+                    "`kinoteatr`(" +
+                            "`name`, " +
+                            "`count_zal`, " +
+                            "`count`) " +
+                        "VALUES " +
+                            $"('{this.Name}', " +
+                            $"'{this.CountZal}', " +
+                            $"'{this.Count}')";
             MySqlConnection connection = Connection.OpenConnection();
             Connection.Query(SQL, connection);
             Connection.CloseConnection(connection);
@@ -56,7 +56,7 @@ namespace Практика_27.Classes
                             $"`count_zal`={this.CountZal}, " +
                             $"`count`={this.Count} " +
                             "WHERE " +
-                            $"`id`='{this.id}'";
+                            $"`id`='{this.Id}'";
             MySqlConnection connection = Connection.OpenConnection();
             Connection.Query(SQL, connection);
             Connection.CloseConnection(connection);
@@ -64,7 +64,7 @@ namespace Практика_27.Classes
 
         public void Delete()
         {
-            string SQL = $"DELETE FROM `kinoteatr` WHERE `id` = {this.id}";
+            string SQL = $"DELETE FROM `kinoteatr` WHERE `id` = {this.Id}";
             MySqlConnection connection = Connection.OpenConnection();
             Connection.Query(SQL, connection);
             Connection.CloseConnection(connection);
