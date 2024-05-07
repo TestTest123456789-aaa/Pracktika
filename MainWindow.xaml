@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800">
     <Grid>
-        <Frame x:Name="Frame" NavigationUIVisibility="Hidden" Opacity="0"/>
+        <Button Click="OpenKino" Content="Кинотеатры" Height="25" Margin="10,10,0,0" HorizontalAlignment="Left" Width="100" VerticalAlignment="Top"/>
+        <Button Click="OpenAfisha" Content="Афишы" Height="25" Margin="0,10,10,0" HorizontalAlignment="Right" Width="100" VerticalAlignment="Top"/>
+        <Frame x:Name="Frame" NavigationUIVisibility="Hidden" Opacity="0" Margin="0,40,0,0"/>
     </Grid>
 </Window>

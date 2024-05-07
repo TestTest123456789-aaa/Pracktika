@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,11 +22,22 @@ namespace Практика_27
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow init;
         public MainWindow()
         {
             InitializeComponent();
-
+            OpenPage(new Pages.Kinoteatr.Main());
+            init = this;
             new KinoteatrContext(0, "test", 12, 12).Add();
         }
+
+        public void OpenPage(Page Page)
+        {
+            Frame.Navigate(Page);
+        }
+
+        private void OpenKino(object sender, RoutedEventArgs e) => OpenPage(new Pages.Kinoteatr.Main());
+
+        private void OpenAfisha(object sender, RoutedEventArgs e) => OpenPage(new Pages.Afisha.Main());
     }
 }
