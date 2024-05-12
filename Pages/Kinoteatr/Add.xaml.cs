@@ -70,11 +70,11 @@ namespace Практика_27.Pages.Kinoteatr
             else
             {
                 kinoteatr = new KinoteatrContext(
-                   0,
+                   kinoteatr.Id,
                    name.Text,
                    countZalInt,
                    countInt);
-                kinoteatr.Add();
+                kinoteatr.Update();
                 MessageBox.Show("Запись обновлена");
             }
             MainWindow.init.OpenPage(new Main());

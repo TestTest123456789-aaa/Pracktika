@@ -41,7 +41,7 @@ namespace Практика_27.Pages.Afisha
                 kinoteatrs.SelectedIndex = AllKinoteatrs.FindIndex(x => x.Id == afisha.IdKinoteatr);
                 name.Text = afisha.Name;
                 data.Text = afisha.Time.ToString("yyyy-MM-dd");
-                time.Text = afisha.Time.ToString("HH-mn");
+                time.Text = afisha.Time.ToString("HH:mm");
                 price.Text = afisha.Price.ToString();
                 bthAdd.Content = "Изменить";
             }
@@ -95,6 +95,7 @@ namespace Практика_27.Pages.Afisha
                     dataAfisha,
                     Price);
                 newAfisha.Add();
+                MessageBox.Show("Запись добавлена");
             }
             else
             {
@@ -105,6 +106,7 @@ namespace Практика_27.Pages.Afisha
                     dataAfisha,
                     Price);
                 afisha.Update();
+                MessageBox.Show("Запись обновлена");
             }
             MainWindow.init.OpenPage(new Afisha.Main());
         }

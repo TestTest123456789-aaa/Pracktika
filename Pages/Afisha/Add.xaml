@@ -5,7 +5,6 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Практика_27.Pages.Afisha"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
       Title="Add">
 
     <Grid Background="Gainsboro">
@@ -22,10 +21,10 @@
             <TextBox x:Name="name" Height="25" Grid.Column="1" Margin="10,97,10,0" VerticalAlignment="Top"/>
             <Label Content="Дата:" Grid.Column="2" VerticalAlignment="Top" Margin="10, 10, 10, 0"/>
             <DatePicker x:Name="data" Height="30" Grid.Column="2" Margin="10,36,130,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="time" Height="25" Grid.Column="2" Margin="200,41,15,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="price" Height="25" Grid.Column="2" Margin="10,261,10,0" VerticalAlignment="Top"/>
-            <Label Content="Стоимость:" Grid.Column="2" VerticalAlignment="Top" Margin="10,230,10,0"/>
-            <Button x:Name="bthAdd" Click="AddRecord" Content="Добавить" Height="25" Grid.Column="2" Margin="0,291,10,0" HorizontalAlignment="Right" Width="100" VerticalAlignment="Top"/>
+            <TextBox x:Name="time" Height="30" Grid.Column="2" Margin="0,36,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="101"/>
+            <TextBox x:Name="price" Height="25" Grid.Column="2" Margin="10,128,10,0" VerticalAlignment="Top"/>
+            <Label Content="Стоимость:" Grid.Column="2" VerticalAlignment="Top" Margin="10,97,10,0"/>
+            <Button x:Name="bthAdd" Click="AddRecord" Content="Добавить" Height="25" Grid.Column="2" Margin="0,158,10,0" HorizontalAlignment="Right" Width="100" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 </Page>

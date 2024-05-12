@@ -31,8 +31,8 @@ namespace Практика_27.Pages.Afisha.Items
 
                 kinoteatrs.Text = AllKinoteatrs.Find(x => x.Id == item.IdKinoteatr).Name;
                 name.Text = item.Name;
-                data.Name = item.Time.ToString("yyyy-MM-dd");
-                time.Text = item.Time.ToString("HH-mn");
+                data.Text = item.Time.ToString("yyyy-MM-dd");
+                time.Text = item.Time.ToString("HH:mm");
                 price.Text = item.Price.ToString();
             this.item = item;
             this.main = main;

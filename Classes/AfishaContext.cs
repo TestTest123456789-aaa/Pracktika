@@ -42,7 +42,7 @@ namespace Практика_27.Classes
                             "VALUES (" +
                                 $"{this.IdKinoteatr}, " +
                                 $"'{this.Name}', " +
-                                $"{this.Time.ToString("yyyy-MM-dd HH:mm:ss")}, " +
+                                $"'{this.Time.ToString("yyyy-MM-dd HH:mm:ss")}', " +
                                 $"{this.Price})";
             MySqlConnection connection = Connection.OpenConnection();
             Connection.Query(SQL, connection);
@@ -53,10 +53,10 @@ namespace Практика_27.Classes
             string SQL = "UPDATE " +
                             "`afisha` " +
                          "SET " +
-                            $"`id_kinoteatr`='{this.IdKinoteatr}', " +
+                            $"`id_kinoteatr`={this.IdKinoteatr}, " +
                             $"`name`='{this.Name}', " +
-                            $"`time`={this.Time.ToString("yyyy-MM-dd HH:mm:ss")}, " +
-                            $"`price`={this.Price} " +
+                            $"`time`='{this.Time.ToString("yyyy-MM-dd HH:mm:ss")}', " +
+                            $"`price`='{this.Price}' " +
                          "WHERE " +
                             $"`id`='{this.Id}'";
             MySqlConnection connection = Connection.OpenConnection();

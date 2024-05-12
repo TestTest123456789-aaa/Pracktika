@@ -28,11 +28,9 @@ namespace Практика_27
             InitializeComponent();
             OpenPage(new Pages.Kinoteatr.Main());
             init = this;
-            new KinoteatrContext(0, "test", 12, 12).Add();
         }
 
-        public void OpenPage(Page Page)
-        {
+        public void OpenPage(Page Page) {
             Frame.Navigate(Page);
         }
 
@@ -41,3 +39,7 @@ namespace Практика_27
         private void OpenAfisha(object sender, RoutedEventArgs e) => OpenPage(new Pages.Afisha.Main());
     }
 }
+// ISP_21_4_8
+// g6Fc6Yl3E#
+// student.permaviat.ru
+// Tickets

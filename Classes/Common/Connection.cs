@@ -9,7 +9,7 @@ namespace Практика_27.Classes.Common
 {
     public class Connection
     {
-        public static readonly string config = "server=127.0.0.1;uid=root;pwd=;database=kino;";
+        public static readonly string config = "server=localhost;uid=root;pwd=Asdfg123;database=kino;";
         public static MySqlConnection OpenConnection()
         {
             MySqlConnection connection = new MySqlConnection(config);
@@ -30,3 +30,7 @@ namespace Практика_27.Classes.Common
         }
     }
 }
+// ISP_21_4_8
+// g6Fc6Yl3E#
+// student.permaviat.ru
+// Tickets
