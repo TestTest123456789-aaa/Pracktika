@@ -23,7 +23,7 @@ namespace Практика_27.Classes.Common
             return new MySqlCommand(SQL, connection).ExecuteReader();
         }
 
-        public static void CloseConnection(MySqlConnection connection)
+        public static void CloseConnection(MySqlConnection connection) 
         {
             connection.Close();
             MySqlConnection.ClearPool(connection);
